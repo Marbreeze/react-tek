@@ -1,14 +1,13 @@
 import React from 'react';
 import Article from '../Components/Article';
 
-function Headlines() {
+function Headlines({title, image, content, url, i}) {
     return (
         <div>
-            <h1>Headline News goes here: </h1> 
-            <p>This should be on the main home page</p>
-            <Article/>
-            <Article/>
-            <Article/>
+            <Article title = {title} 
+            image = {image} 
+            content = {content} 
+            url ={url}/>
         </div>
     )
 }

@@ -1,24 +1,38 @@
 .App {
   text-align: center;
 }
-
-nav {
-  border-bottom: 10px solid orange;
+.navbar {
+  width: 100%;
+  background-color: orange;
+}
+.nav-container {
+  display: flex;
+}
+.nav-logo {
+  display: flex;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  list-style: none;
+  padding: 1em;
 }
 
-ul {
-  display : flex;
-  justify-content: space-evenly;
+.nav-link {
+  display: block;
+  flex: 0 1 auto;
+  text-decoration: none;
+  color: white;
 }
 
 a {
-  color : orange;
+  color: orange;
   text-decoration: none;
 }
 
-
-li {
-  list-style: none;
+a:hover {
+  text-decoration: underline;
 }
 
 .App-logo {
@@ -56,3 +70,11 @@ li {
     transform: rotate(360deg);
   }
 }
+
+img {
+  width: 80%;
+}
+
+/* .head-news {
+  color: orange;
+} */

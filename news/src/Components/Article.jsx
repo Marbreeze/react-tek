@@ -1,18 +1,15 @@
 import React from 'react'
 
-function Article() {
+function Article({title, image, content, url}) {
     return (
         <article>
             <header>
-                <h2>Sample Article</h2>
-                <img src="https://via.placeholder.com/150" alt="placeholder"/>
+                <h2><a href = {url}>{title}</a></h2>
+                <img src={image} alt=""/>
             </header>
             <main>
                 <section>
-                    <p>Sample Article Section 1</p>
-                </section>
-                <section>
-                    <p>Sample Article Section 2</p>
+                    <p>{content}</p>
                 </section>
             </main>
         </article>
